@@ -55,9 +55,10 @@ class Factory
             ->setHttpClient($guzzle);
 
         // Configure hosts
-        $clientBuilder
-            ->setHosts($config['hosts'])
-            ->setBasicAuthentication($config['username'], $config['password']);
+        $clientBuilder->setHosts($config['hosts']);
+
+        if($config['username'] && $config['password'])
+            $clientBuilder->setBasicAuthentication($config['username'], $config['password']);
 
         // Configure logging
         if (Arr::get($config, 'logging')) {

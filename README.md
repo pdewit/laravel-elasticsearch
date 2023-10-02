@@ -169,7 +169,7 @@ The `Elasticsearch` facade is just an entry point into the [ES client](https://g
 so previously you might have used:
 
 ```php
-use Elasticsearch\ClientBuilder;
+use Elastic\Elasticsearch\ClientBuilder;
 
 $data = [
     'body' => [

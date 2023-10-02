@@ -5,7 +5,7 @@ namespace MailerLite\LaravelElasticsearch\Tests;
 use MailerLite\LaravelElasticsearch\Factory;
 use MailerLite\LaravelElasticsearch\Manager;
 use Elasticsearch;
-use Elasticsearch\Client;
+use Elastic\Elasticsearch\Client;
 
 class ServiceProviderTests extends TestCase
 {
